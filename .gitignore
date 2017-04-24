@@ -1,0 +1,5 @@
+LICENSE
+app/node_modules/*
+app/build/*
+*.map
+node_modules/*

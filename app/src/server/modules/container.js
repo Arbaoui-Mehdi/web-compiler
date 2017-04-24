@@ -34,8 +34,13 @@ class Container {
     // Container Config
     let timeout_val = 5;
     let path        = '/var/www/html/web-compiler/app/src/server/';
-    let vm_name     = 'virtual_machine';
+    let vm_name     = 'web_compiler';
 
+    /**
+     * [description]
+     * @param  {[type]} socket [description]
+     * @return {[type]}        [description]
+     */
     io.on('connection', function (socket) {
       socket.on('source code', function (data) {
 
@@ -75,9 +80,7 @@ class Container {
         //
         // data will contain the output of the compiled/interpreted code
         // the result maybe normal program output, list of error messages or a Timeout error
-        sandbox.run(function(data){
-
-        });
+        sandbox.run(function(data){});
 
 
       });

@@ -89,8 +89,8 @@ class Sandbox{
    */
   prepare(success){
 
-    let exec       = require('child_process').exec;
-    let fs         = require('fs');
+    const exec     = require('child_process').exec;
+    const fs       = require('fs');
 
     let path       = this.path;
     let folder     = this.folder;
@@ -101,7 +101,7 @@ class Sandbox{
     // Command to Execute
     // Example: mkdir /temp/5eb3cca437727a17965e && cp /Payload/* /temp/5eb3cca437727a17965e && chmod 777 /temp/5eb3cca437727a17965e
     let command = `mkdir ${path}${folder} && cp ${path}payload/* ${path}${folder} && chmod 777 ${path}${folder}`;
-    console.log(command);
+
     //
     // Executing command
     exec(command, function(st){
@@ -173,8 +173,8 @@ class Sandbox{
 
     //
     //
-    let exec = require('child_process').exec;
-    let fs   = require('fs');
+    const exec = require('child_process').exec;
+    const fs   = require('fs');
     let myC  = 0; //variable to enforce the timeout_value
 
     //
@@ -195,7 +195,6 @@ class Sandbox{
     // /var/www/html/web-compiler/app/src/server/DockerTimeout.sh 5s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules'
     // -i -t -v  "/var/www/html/web-compiler/app/src/server/temp/e2ae1f6b25e828c90d77":/usercode virtual_machine /usercode/script.sh python file.py
     let command = `${path}DockerTimeout.sh ${timeout_value}s  -i -t -v "${path}${folder}":/usercode ${vm_name} /usercode/script.sh ${compiler_name} ${file_name} ${output_command} ${extra_arguments}`;
-    console.log(command);
 
     //
     //
@@ -205,7 +204,6 @@ class Sandbox{
     //
     //
     // Check for File named "completed" after every 1 second
-
     let intid = setInterval(function(){
 
       //

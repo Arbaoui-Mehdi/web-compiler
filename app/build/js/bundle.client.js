@@ -4100,7 +4100,6 @@ var Client = function () {
      */
     value: function compileCode() {
       $('#send').on('click', function () {
-        console.log($('.stdin').val());
         socket.emit('source code', {
           language: $('.lang').val(),
           code: $('.code').val(),

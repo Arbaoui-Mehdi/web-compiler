@@ -9,12 +9,11 @@
   "author": "Arbaoui Mehdi",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.1",
     "crypto": "0.0.3",
     "express": "^4.15.2",
+    "jquery": "^3.2.0",
     "socket.io": "^1.7.3",
-    "socket.io-client": "^1.7.3",
-    "jquery": "^3.2.0"
+    "socket.io-client": "^1.7.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

@@ -33,7 +33,7 @@ class Container {
     //
     // Container Config
     let timeout_val = 5;
-    let path        = '/var/www/html/web-compiler/app/src/server/';
+    let path        = '/Applications/MAMP/htdocs/web-compiler/app/src/server/';
     let vm_name     = 'web_compiler';
 
     /**

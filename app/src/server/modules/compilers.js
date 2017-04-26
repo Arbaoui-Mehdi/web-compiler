@@ -20,7 +20,8 @@
  */
 const compilers = [
   ["python","file.py","","Python",""],
-  ["\'gcc -o /usercode/a.out\'","file.c","/usercode/a.out","C",""]
+  ["\'gcc -o /usercode/a.out\'","file.c","/usercode/a.out","C",""],
+  ["assembler","file.asm","/usercode/file","Assembly","/usercode/file"]
 ];
 
 export { compilers };

@@ -11,7 +11,7 @@ require('./assets/scss/main.scss')
  *
  */
 const $ = require('jquery');
-const host = '172.16.128.129';
+const host = 'localhost';
 const port = 8080;
 const socket = require("socket.io-client")(`${host}:${port}`);
 
